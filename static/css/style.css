@@ -1,0 +1,31 @@
+strong{
+    color: aqua;
+    font-size: large;
+    text-align: center;
+}
+
+body {
+    background-color: azure;
+    text-align: center;
+}
+button {
+    color: blue;
+}
+
+form {
+    background-color: aquamarine;
+    border: 5rem;
+}
+
+ul {
+    border-collapse: collapse;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <img id="img" class="guepard-img" src="{{ url_for('static', filename= 'img/Poke.PNG') }}" alt="" width="200px"><br>
+        <title>Next en Html</title>
+    </head>
+<strong>Login</strong>
+<p>My first paragraph.</p>
+<div>
+    <div>
+        <p>Bienvenue {{user}} </p>
+    </div>
+</div>
+<form action="{{url_for('signup')}}" method="post" autocomplete="on">
+   
+    <legend>Entrer vos coordoné</legend>
+    <label for="prenom" >Prénom</label>
+    <input id="prenom" type="text" name="prenom" required><br>
+    <label for="nom">Nom de famille</label>
+    <input id="nom" type="text" name="nom"><br>
+    <label for="age">Age</label>
+    <input id="age" type="text" name="age"><br>
+    <input type="submit" value="Envoyer le formulaire"><br>
+
+</form>
+<a href={{url_for ('logout')}}><button>Logout</button></a><br>
+<br>
+<ul>
+<li class="navbar"><a href={{url_for ('hello')}}><button>retourner a la page d'acceuil</button>  </a></li>
+<li class="navbar"><a href={{url_for ('next')}}> <button>retourner a la page next</button> </a></li>
+
+</ul>
+</body>
+</html>

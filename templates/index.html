@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <img id="img" class="guepard-img" src="{{ url_for('static', filename= 'img/Poke.PNG') }}" alt="" width="200px"><br>
+        <title>Index en Html</title>
+    </head>
+
+<strong>Login</strong>
+<form action="{{url_for('login')}}" method="post" autocomplete="on">
+   
+    <legend>Entrer vos identifiant</legend>
+    <label for="username" >identifiant :</label>
+    <input id="username" type="text" name="username" required><br>
+    <label for="mdp">Mot de passe :</label>
+    <input id="mdp" type="text" name="mdp" required><br>
+    
+    <input type="submit" value="Envoyer le formulaire"><br>
+
+</form>
+<p> Bienvenue {{message}} ! </p>
+
+
+
+</body>
+</html>
