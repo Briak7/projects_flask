@@ -6,7 +6,7 @@ from werkzeug.wrappers import  response
 app = Flask (__name__)
 app.config["DEBUG"]="TRUE"
 app.secret_key=os.urandom(2)
-#debut
+#debut moi haha
 @app.route('/')
 def hello():
     
